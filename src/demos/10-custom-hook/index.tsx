@@ -1,5 +1,5 @@
 // src/demos/10-custom-hook/CustomHookDemo.tsx
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 
 // ✅ 커스텀 훅 정의
 const useWindowWidth = () => {
