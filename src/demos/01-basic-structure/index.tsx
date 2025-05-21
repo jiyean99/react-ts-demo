@@ -1,4 +1,5 @@
 import { CodeBlock } from '../../componennts/CodeBlock';
+import { InlineCode } from '@/componennts/InlineCode.tsx';
 
 const BasicStructureDemo = () => {
   return (
@@ -23,7 +24,7 @@ const BasicStructureDemo = () => {
       <section>
         <h3>🧩 JSX와 TSX</h3>
         <p>
-          리액트에서 JSX 문법을 사용하려면 파일 확장자가 <code>.tsx</code> 이어야 하며,
+          리액트에서 JSX 문법을 사용하려면 파일 확장자가 <InlineCode>.tsx</InlineCode> 이어야 하며,
           타입스크립트와 함께 사용할 수 있습니다.
         </p>
         <CodeBlock>
@@ -66,7 +67,7 @@ const App = () => {
       <section>
         <h3>✅ main.tsx</h3>
         <p>
-          ReactDOM을 통해 <code>App</code>을 <code>root</code> DOM에 렌더링합니다.
+          ReactDOM을 통해 <InlineCode>App</InlineCode>을 <InlineCode>root</InlineCode> DOM에 렌더링합니다.
         </p>
         <CodeBlock>
           {`
@@ -86,7 +87,7 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       <section>
         <h3>🧠 TypeScript의 느낌표 (!) 의미</h3>
         <p>
-          <code>document.getElementById('root')!</code> 에서 <code>!</code>는 해당 값이{' '}
+          <InlineCode>document.getElementById('root')!</InlineCode> 에서 <InlineCode>!</InlineCode>는 해당 값이{' '}
           <strong>null이 아님</strong>을 명시적으로 알려주는 <em>non-null assertion</em>입니다.
         </p>
       </section>
